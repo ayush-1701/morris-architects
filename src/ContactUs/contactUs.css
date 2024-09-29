@@ -1,0 +1,12 @@
+.contactParent{
+    /* background-color: red; */
+    padding: 20px;
+    height: 100vh;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}

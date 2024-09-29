@@ -6,13 +6,17 @@ import CarouselFade from '../Carousel/carousel';
 
 const Home = () => {
     return (
-      <div>
-        {/* <div> */}
-            <CarouselFade/>
-        {/* </div> */}
+      <div className='parentDiv'>
+        <div className='carouselHeight'>
+            <CarouselFade style={{maxHeight:"620px"}}/>
+        </div>
+
+        <div>
+          Hi
+        </div>
       </div>
+      
     );
   };
-  
   
   export default Home;

@@ -1,0 +1,134 @@
+.image {
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.center-cropped {
+    width: 140%;
+    height: 100%;
+    object-fit: none; /* Do not scale the image */
+    object-position: center; 
+  }
+
+.captions{
+    position: absolute;
+    left: -225px;
+    bottom: -20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    z-index: 10;
+}
+
+.custom-prev-arrow, .custom-next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: #fff; 
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .custom-prev-arrow:hover, .custom-next-arrow:hover {
+    color: grey; 
+    transform: translateY(-50%) scale(1.2); 
+  }
+  
+  .custom-prev-arrow {
+    left: 15px;
+  }
+  
+  .custom-next-arrow {
+    right: 15px;
+  }
+
+  
+
+
+.aws-btn {
+    --slider-height-percentage: 60%;
+    --slider-transition-duration: 770ms;
+    --organic-arrow-thickness: 9px;
+    --organic-arrow-border-radius: 30px;
+    --organic-arrow-height: 50px;
+    --organic-arrow-color: #851515;
+    --control-button-width: 10%;
+    --control-button-height: 25%;
+    --control-button-background: transparent;
+    --control-bullet-color: #851515;
+    --control-bullet-active-color: #851515;
+    --loader-bar-color: #851515;
+    --loader-bar-height: 4px;
+  }
+  
+  .aws-btn .awssld__content > div .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    z-index: 10;
+  }
+
+  .aws-btn .awssld__content > div {
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+  }
+  
+  .aws-btn .awssld__content > div img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Ensure the image covers the entire area */
+    object-position: center !important; /* Center the image */
+  }
+  
+  
+  .aws-btn .awssld__wrapper {
+    position: relative;
+  }
+  
+  .aws-btn .awssld__next,
+  .aws-btn .awssld__prev {
+    --organic-arrow-thickness: 9px;
+    --organic-arrow-border-radius: 30px;
+    --organic-arrow-height: 50px;
+    --organic-arrow-color: #851515;
+  }
+  
+  .aws-btn .awssld__next::before,
+  .aws-btn .awssld__prev::before {
+    --organic-arrow-color: #851515;
+  }
+  
+  .aws-btn .awssld__bullets .awssld__bullets--button {
+    --control-bullet-color: #851515 !important;
+  }
+  
+  .aws-btn .awssld__bullets .awssld__bullets--button.active {
+    --control-bullet-active-color: #851515 !important;  
+  }
+  
+  .aws-btn .awssld__loader {
+    --loader-bar-color: #851515;
+    --loader-bar-height: 4px;
+  }
+  
+  .aws-btn .awssld__container {
+    transition-duration: 770ms !important; /* Override the default transition duration */
+  }
+  

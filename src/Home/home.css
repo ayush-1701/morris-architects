@@ -1,3 +1,13 @@
 .parentDiv{
-    
+    max-height: 640px;
+    /* padding: 20px; */
+
+}
+
+.carouselHeight {
+    height: 620px; 
+  }
+  
+.carousel-wrapper, .carousel, .carousel .slider-wrapper, .carousel .slider {
+    height: 100%;
 }
